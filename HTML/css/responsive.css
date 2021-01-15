@@ -1,0 +1,223 @@
+/*******************************************************
+	Template Name	 : Ranik - Creative One Page Parallax
+    Author           : aam-developer
+    Version          : 1.0
+    Created          : 2019
+*******************************************************/
+
+
+
+@media only screen and (min-width: 1440px) and (max-width: 1920px){
+	.intro-pic {
+		height: 100vh;
+	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1440px){
+	.intro-pic {
+		height: 100vh;
+	}
+}
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+	.navbar-nav {
+		width: 84%;
+	}
+	.intro-pic {
+		height: 75vh;
+	}
+
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.navbar-nav {
+		width: 84%;
+	}
+	.navbar-b.navbar-trans .nav-link, .navbar-b.navbar-reduce .nav-link {
+		letter-spacing: 0.1rem;
+	}
+	.home-content h1 {
+		font-size: 2.7rem;
+	}
+	.counter-item {
+		margin-top: 30px;
+	}
+	.single-counter {
+		margin-top: 40px;
+	}
+	.work-content {
+		margin-left: 0;
+		padding-top: 35px;
+	}
+	.contact_info_container {
+		margin-top: 50px;
+	}
+	.intro-pic {
+		height: 50vh;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.home-content h1 {
+		font-size: 2rem;
+		width: 100%;
+		text-align: center;
+	}
+	.display-table {
+		height: 50%;
+	}
+	.intro-pic {
+		width: 100%;
+		height: 60vh;
+		right: 50%;
+		bottom: 0;
+		top: inherit;
+		transform: translateX(50%);
+	}
+
+	#navbarDefault {
+		text-align: center;
+	}
+}
+
+
+
+@media only screen and (max-width: 479px) {
+	.navbar-collapse .navbar-nav {
+		margin-top: 10px;
+	}
+	.navbar-nav {
+		width: 100%;
+		text-align: center;
+		display: block;
+	}
+	.navbar-b.navbar-trans .nav-item, .navbar-b.navbar-reduce .nav-item {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.navbar-expand-md .navbar-collapse li {
+		display: block;
+	}
+	.header-social {
+		display: none;
+	}
+	.home-content h3 {
+		font-size: 20px;
+	}
+	.home-content h1 {
+		font-size: 30px;
+	}
+	.intro-grid {
+		top: 30%;
+		right: 0;
+		bottom: 0;
+		left: 30%;
+		width: 65%;
+	}
+	.intro-pic {
+		display: none;
+	}
+	.about_image img {
+		width: 60%;
+	}
+	.about_content .site-btn {
+		margin: 15px;
+	}
+	.services-item-info {
+		padding-left: 30px;
+	}
+	.services-item-count::after {
+		width: 20px;
+	}
+	.counter-title h1 {
+		font-size: 30px;
+		letter-spacing: 1px;
+	}
+	.counter-item {
+		margin-top: 20px;
+	}
+	.single-counter {
+		margin-top: 40px;
+	}
+	.work-content {
+		margin-left: 0;
+		padding-top: 35px;
+	}
+	.contact_info_container {
+		margin-top: 50px;
+	}
+	.footer-social .list-inline li {
+		margin: 5px 10px;
+	}
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+	.navbar-collapse .navbar-nav {
+		margin-top: 10px;
+	}
+	.navbar-nav {
+		width: 100%;
+		text-align: center;
+		display: block;
+	}
+	.navbar-b.navbar-trans .nav-item, .navbar-b.navbar-reduce .nav-item {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.navbar-expand-md .navbar-collapse li {
+		display: block;
+	}
+	.header-social {
+		display: none;
+	}
+	.home-content h3 {
+		font-size: 20px;
+	}
+	.home-content h1 {
+		font-size: 30px;
+	}
+	.intro-grid {
+		top: 30%;
+		right: 0;
+		bottom: 0;
+		left: 30%;
+		width: 65%;
+	}
+	.intro-pic {
+		display: none;
+	}
+	.about_image img {
+		width: 60%;
+	}
+	.about_content .site-btn {
+		margin: 15px;
+	}
+	.services-item-info {
+		padding-left: 30px;
+	}
+	.services-item-count::after {
+		width: 20px;
+	}
+	.counter-title h1 {
+		font-size: 30px;
+		letter-spacing: 1px;
+	}
+	.counter-item {
+		margin-top: 20px;
+	}
+	.single-counter {
+		margin-top: 40px;
+	}
+	.work-content {
+		margin-left: 0;
+		padding-top: 35px;
+	}
+	.contact_info_container {
+		margin-top: 50px;
+	}
+	.footer-social .list-inline li {
+		margin: 5px 10px;
+	}
+
+}
