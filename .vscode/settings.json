@@ -1,0 +1,20 @@
+{
+    "liveSassCompile.settings.excludeList": [
+
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/HTML/css"
+        }
+    ],
+    "editor.fontFamily": "JetBrains Mono, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "editor.letterSpacing": 0.5,
+    "editor.smoothScrolling": true,
+}
