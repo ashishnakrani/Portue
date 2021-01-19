@@ -1,0 +1,65 @@
+body {
+  background: #1D2B64;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#F8CDDA), to(#1D2B64));
+  background: linear-gradient(to right, #F8CDDA, #1D2B64);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  padding: 10px;
+  width: 50%;
+  float: right;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3rem;
+}
+
+nav .nav {
+  border-radius: 3rem;
+  position: relative;
+  height: 3.5rem;
+  border: none !important;
+}
+
+nav .nav-link {
+  width: 6rem;
+  text-align: center;
+  border-radius: 3rem !important;
+  border: none !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--white);
+}
+
+nav .nav-link:hover {
+  background: none !important;
+}
+
+nav .nav:after {
+  content: "";
+  position: absolute;
+  width: 6rem;
+  background: #fff;
+  left: 0;
+  z-index: -1;
+  height: calc(3.5rem);
+  border-radius: 1.7rem;
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+/*# sourceMappingURL=main.css.map */

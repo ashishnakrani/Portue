@@ -17,4 +17,6 @@
     "editor.fontLigatures": true,
     "editor.letterSpacing": 0.5,
     "editor.smoothScrolling": true,
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
 }
