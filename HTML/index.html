@@ -9,28 +9,59 @@
   <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Font Icons -->
+  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <div class="site-wrapper">
+    <div class="bubble-1 bubble"></div>
+    <div class="bubble-2 bubble"></div>
     <div class="container mt-10">
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <span class="navbar-indicator"></span>
           <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
             aria-controls="nav-home" aria-selected="true">Home</a>
           <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-            aria-controls="nav-profile" aria-selected="false">Profile</a>
+            aria-controls="nav-profile" aria-selected="false">About Me</a>
           <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
             aria-controls="nav-contact" aria-selected="false">Contact</a>
         </div>
       </nav>
       <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-          home tab
+          <div class="home-container">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <img src="images/hero-image.jpg" alt="" class="hero-image w-100">
+              </div>
+              <div class="col-12 col-lg-6 home-content">
+                <div class="mt-25">
+                  <span class="home-content__badge">It's me</span> <br>
+                  <h2 class="heading">Anastasiya Kate</h2>
+                  <p>Senior Creative Designer and Content Developer</p>
+                  <button class="hire-me-btn btn">Hire Me</button>
+                </div>
+                <div class="mb-15 mr-15">
+                  <ul class="social-icons">
+                    <li><a class="social-icons__item" href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a class="social-icons__item" href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                    <li><a class="social-icons__item" href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="social-icons__item" href="javascript:void(0)"><i class="fab fa-behance"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-          profeile tab
+          <div class="about-me-container p-10">
+            <h3 class="page-heading heading">
+              About Me
+            </h3>
+          </div>
         </div>
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
           contact
