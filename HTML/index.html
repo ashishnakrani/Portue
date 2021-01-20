@@ -24,7 +24,7 @@
           <span class="navbar-indicator"></span>
           <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
             aria-controls="nav-home" aria-selected="true">Home</a>
-          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+          <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-profile" role="tab"
             aria-controls="nav-profile" aria-selected="false">About Me</a>
           <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
             aria-controls="nav-contact" aria-selected="false">Contact</a>
@@ -34,11 +34,11 @@
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
           <div class="home-container">
             <div class="row">
-              <div class="col-12 col-lg-6">
-                <img src="images/hero-image.jpg" alt="" class="hero-image w-100">
+              <div class="col-12 col-lg-6 h-md-auto h-100 home-container__item">
+                <img src="images/hero-image.jpg" alt="intro image" class="hero-image w-100 h-100">
               </div>
-              <div class="col-12 col-lg-6 home-content">
-                <div class="mt-25">
+              <div class="col-12 col-lg-6 home-content h-md-auto h-100 home-container__item">
+                <div class="mt-25 ml-15 ml-lg-0">
                   <span class="home-content__badge">It's me</span> <br>
                   <h2 class="heading">Anastasiya Kate</h2>
                   <p>Senior Creative Designer and Content Developer</p>
@@ -46,8 +46,10 @@
                 </div>
                 <div class="mb-15 mr-15">
                   <ul class="social-icons">
-                    <li><a class="social-icons__item" href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a class="social-icons__item" href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                    <li><a class="social-icons__item" href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li><a class="social-icons__item" href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+                    </li>
                     <li><a class="social-icons__item" href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
                     <li><a class="social-icons__item" href="javascript:void(0)"><i class="fab fa-behance"></i></a></li>
                   </ul>
@@ -58,9 +60,70 @@
         </div>
         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
           <div class="about-me-container p-10">
-            <h3 class="page-heading heading">
+            <h2 class="page-heading heading">
               About Me
-            </h3>
+            </h2>
+            <div class="card intro">
+              <div class="row align-items-center">
+                <div class="intro__image col-lg-3 col-md-4 col-12">
+                  <img src="images/avatar-image.jpg" alt="avatar_image">
+                  <p class="intro__image__badge"><span>03</span>Years Experience</p>
+                </div>
+                <div class="intro__description col-lg-9 col-md-8 col-12">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  <div class="row">
+                    <div class="col-lg-4 col-12 mb-5"><b>Email:</b><a href="javascript:void(0)">ash@gmail.com</a></div>
+                    <div class="col-lg-4 col-12 mb-5"><b>Skyp:</b><a href="javascript:void(0)">YouSkype</a></div>
+                    <div class="col-lg-4 col-12 mb-5"><b>Phone:</b><a href="javascript:void(0)">+91 86868458</a></div>
+                    <div class="col-lg-4 col-12 mb-5"><b>Freelance:</b><a href="javascript:void(0)">Available</a></div>
+                    <div class="col-lg-4 col-12 mb-5"><b>Address:</b><a href="javascript:void(0)">Gujarat, India</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="skills-container">
+              <h3 class="heading">Skills</h3>
+              <div class="skills">
+                <div class="row">
+                  <div class="col-lg-2 col-md-3 col-4 text-center mt-5">
+                    <div class="skills__item1 item" data-percentage="20">
+                      <small>HTML</small>
+                    </div>
+                  </div>                  
+                  <div class="col-lg-2 col-md-3 col-4 text-center mt-5">
+                    <div class="skills__item2 item" data-percentage="75">
+                      <small>Photoshop</small>
+                    </div>
+                  </div>                  
+                  <div class="col-lg-2 col-md-3 col-4 text-center mt-5">
+                    <div class="skills__item3 item" data-percentage="25">
+                      <small>Illustrator</small>
+                    </div>
+                  </div>                  
+                  <div class="col-lg-2 col-md-3 col-4 text-center mt-5">
+                    <div class="skills__item4 item" data-percentage="65">
+                      <small>Adobe XD</small>
+                    </div>
+                  </div>                  
+                  <div class="col-lg-2 col-md-3 col-4 text-center mt-5">
+                    <div class="skills__item5 item" data-percentage="50">
+                      <small>Javascript</small>
+                    </div>
+                  </div>                  
+                  <div class="col-lg-2 col-md-3 col-4 text-center mt-5">
+                    <div class="skills__item6 item" data-percentage="75">
+                      <small>CSS</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
@@ -72,6 +135,7 @@
   <!-- Vendor Scripts -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/circle-progress.js"></script>
   <script src="js/main.js"></script>
 </body>
 

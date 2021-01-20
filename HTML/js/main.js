@@ -11,3 +11,18 @@ $(document).ready(function() {
     }, 100);
   });
 });
+
+$(document).on('click', '#nav-about-tab', function() {
+  let skills = document.querySelectorAll('.item');
+  let i;
+  for (i = 1; i<=skills.length; i++) {
+    let percentage = $('.skills__item'+i).attr('data-percentage');
+    $('.skills__item'+i).find('small b').remove();
+    $('.skills__item'+i).find('small br').remove();
+    $('.skills__item'+i).find('small').prepend(`<b>${percentage}%</b><br>`);  
+    $('.skills__item'+i).circleProgress({
+      value: parseFloat(percentage/100),
+      fill: {color: '#1D2B64'}
+    });
+  }
+});
