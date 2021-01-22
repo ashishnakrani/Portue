@@ -11,21 +11,20 @@ $(document).ready(function() {
     }, 100);
   });
 
-  $(window).load(function(){
-console.log('ksdfskdlj')
+  $(document).ready(function(){
   $(".testimonials").owlCarousel({
     loop:true,
-    margin:10,
+    margin:30,
     nav:true,
     responsive:{
         0:{
             items:1
         },
         600:{
-            items:3
+            items:1
         },
         1000:{
-            items:5
+            items:2
         }
     }
 });
