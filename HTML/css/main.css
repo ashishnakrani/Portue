@@ -43,11 +43,27 @@ body {
           transform: rotate(180deg);
 }
 
+.page-heading {
+  padding-bottom: 1rem;
+  display: block;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.page-heading .heading {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.page-heading + .heading {
+  margin-top: 1rem;
+}
+
 .heading {
   color: var(--primary-dark);
   position: relative;
   display: inline-block;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   margin-bottom: 2rem;
 }
 
@@ -309,6 +325,18 @@ nav .nav .navbar-indicator {
   margin-right: 5px;
 }
 
+@media screen and (max-width: 992px) {
+  .about-me-container .intro__image__badge {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about-me-container .intro__image {
+    margin-bottom: 1rem;
+  }
+}
+
 .about-me-container .intro__description b {
   margin-right: 5px;
 }
@@ -344,6 +372,7 @@ nav .nav .navbar-indicator {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 1rem;
 }
 
 .about-me-container .fun-facts-container .facts__item:hover .facts__item__icon {
@@ -384,7 +413,6 @@ nav .nav .navbar-indicator {
 
 .about-me-container .testimonials-container {
   max-width: 100%;
-  overflow: hidden;
 }
 
 .about-me-container .testimonials-container .testimonials__item {
@@ -410,8 +438,39 @@ nav .nav .navbar-indicator {
      object-fit: cover;
 }
 
+.about-me-container .testimonials-container .testimonials__item > i {
+  font-size: 5rem;
+  position: absolute;
+  z-index: -1;
+  opacity: .2;
+  right: 1rem;
+}
+
 .about-me-container .testimonials-container .testimonials .owl-nav {
   display: inline-block;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  right: 0;
+}
+
+.about-me-container .testimonials-container .testimonials .owl-nav button {
+  height: 3rem;
+  width: 3rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 50%;
+  margin-left: 1rem;
+  font-size: 2rem;
+  outline: none;
+}
+
+.about-me-container .testimonials-container .testimonials .owl-nav button:hover {
+  border-color: transparent;
+  background: var(--primary-dark);
 }
 
 @media screen and (max-width: 992px) {

@@ -10,6 +10,10 @@ body {
   --primary-light: #F8CDDA;
 }
 
+// Variables
+$white: #fff;
+$black: #000;
+
 * {
   margin: 0;
   padding: 0;
@@ -43,11 +47,27 @@ body {
 }
 
 // Heading style
+.page-heading {
+  padding-bottom: 1rem;
+  display: block;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba($color: $black, $alpha: .2);
+
+  .heading {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  & + .heading {
+    margin-top: 1rem;
+  }
+}
+
 .heading {
   color: var(--primary-dark);
   position: relative;
   display: inline-block;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   margin-bottom: 2rem;
 
   &:after {
@@ -68,7 +88,7 @@ nav {
   padding: 10px;
   width: 50%;
   float: right;
-  background: rgba($color: #FFF, $alpha: .2);
+  background: rgba($color: $white, $alpha: .2);
   border-radius: 3rem;
   backdrop-filter: blur(10px);
   box-shadow: 5px 10px 35px rgba($color: #000000, $alpha: .02);
@@ -193,10 +213,10 @@ nav {
     font-weight: normal;
     letter-spacing: .3rem;
     transition: .5s;
-    box-shadow: 3px 3px 3px rgba($color: #000000, $alpha: .2);
+    box-shadow: 3px 3px 3px rgba($color: $black, $alpha: .2);
 
     &:hover {
-      box-shadow: 5px 10px 40px rgba($color: #000000, $alpha: .15);
+      box-shadow: 5px 10px 40px rgba($color: $black, $alpha: .15);
     }
   }
 
@@ -222,7 +242,7 @@ nav {
       background: var(--white);
 
       &:hover {
-        box-shadow: 0 10px 30px rgba($color: #000000, $alpha: .2);
+        box-shadow: 0 10px 30px rgba($color: $black, $alpha: .2);
       }
     }
   }
@@ -231,7 +251,7 @@ nav {
 // About
 .about-me-container {
   .intro {
-    box-shadow: 0 10px 30px rgba($color: #000000, $alpha: .05);
+    box-shadow: 0 10px 30px rgba($color: $black, $alpha: .05);
     padding: 15px;
     border: 0;
     opacity: .9;
@@ -246,7 +266,7 @@ nav {
         border-radius: 50%;
         object-fit: cover;
         display: inline-block;
-        box-shadow: 0 10px 30px rgba($color: #000000, $alpha: .05);
+        box-shadow: 0 10px 30px rgba($color: $black, $alpha: .05);
       }
 
       &__badge {
@@ -263,6 +283,14 @@ nav {
           font-weight: bold;
           margin-right: 5px;
         }
+
+        @media screen and (max-width: 992px) {
+          display: block;
+        }
+      }
+
+      @media screen and (max-width: 992px) {
+        margin-bottom: 1rem;
       }
     }
 
@@ -280,7 +308,7 @@ nav {
   .skills {
     .item {
       position: relative;
-      display: inline-block;
+      display: inline-block;;
 
       small {
         position: absolute;
@@ -300,17 +328,18 @@ nav {
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-bottom: 1rem;
 
         &:hover .facts__item__icon {
-          box-shadow: 0 10px 30px rgba($color: #000000, $alpha: .1);
+          box-shadow: 0 10px 30px rgba($color: $black, $alpha: .1);
         }
 
         &__icon {
           height: 60px;
           width: 60px;
           border-radius: 10px;
-          box-shadow: 3px 3px 3px rgba($color: #000000, $alpha: .08);
-          background: rgba($color: #fff, $alpha: .8);
+          box-shadow: 3px 3px 3px rgba($color: $black, $alpha: .08);
+          background: rgba($color: $white, $alpha: .8);
           display: flex;
           justify-content: center;
           align-items: center;
@@ -336,14 +365,13 @@ nav {
 
   .testimonials-container {
     max-width: 100%;
-    overflow: hidden;
     
     .testimonials {
       &__item {
         display: flex;
         padding: 15px;
-        background: rgba($color: #fff, $alpha: .5);
-        border: 1px solid rgba($color: #fff, $alpha: .8);
+        background: rgba($color: $white, $alpha: .5);
+        border: 1px solid rgba($color: $white, $alpha: .8);
         border-radius: 15px;
 
         &-img {
@@ -357,10 +385,39 @@ nav {
             object-fit: cover;
           }
         }
+
+        &>i {
+          font-size: 5rem;
+          position: absolute;
+          z-index: -1;
+          opacity: .2;
+          right: 1rem;
+        }
       }
 
       .owl-nav {
         display: inline-block;
+        position: absolute;
+        top: 0;
+        transform: translateY(-150%);
+        right: 0;
+
+        button {
+          height: 3rem;
+          width: 3rem;
+          transition: .3s;
+          border: 1px solid $white;
+          color: $white;
+          border-radius: 50%;
+          margin-left: 1rem;
+          font-size: 2rem;
+          outline: none;
+
+          &:hover {
+            border-color: transparent;
+            background: var(--primary-dark);
+          }
+        }
       }
     }
   }

@@ -31,7 +31,7 @@ $(document).ready(function() {
   });
 });
 
-$(document).on('click', '#nav-about-tab', function() {
+$(document).on('click', '#nav-about-me-tab', function() {
   let skills = document.querySelectorAll('.item');
   let i;
   for (i = 1; i<=skills.length; i++) {
