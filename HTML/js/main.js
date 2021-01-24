@@ -45,3 +45,25 @@ $(document).on('click', '#nav-about-me-tab', function() {
     });
   }
 });
+
+let $projects = $('.projects__grid');
+$projects.imagesLoaded(function() {
+  setTimeout(function() {
+
+    $projects.isotope({
+      itemSelector: '.projects__item',
+      layoutMode: 'masonry',
+      percentPosition: true,
+      getSortData: {
+        name: '.name',
+        symbol: '.symbol',
+        number: '.number parseInt',
+        category: '[data-category]',
+        weight: function( itemElem ) {
+          var weight = $( itemElem ).find('.weight').text();
+          return parseFloat( weight.replace( /[\(\)]/g, '') );
+        }
+      }
+    });
+  }, 1500);
+});

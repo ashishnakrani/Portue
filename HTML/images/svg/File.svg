@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>Stockholm-icons / Files / File</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Stockholm-icons-/-Files-/-File" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
-        <path d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z" id="Combined-Shape" fill="#2f4392" fill-rule="nonzero" opacity="0.3"></path>
-        <rect id="Rectangle" fill="#000000" x="6" y="11" width="9" height="2" rx="1"></rect>
-        <rect id="Rectangle-Copy" fill="#000000" x="6" y="15" width="5" height="2" rx="1"></rect>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0,0H24V24H0Z" fill="none" fill-rule="evenodd"/><path d="M5.857,2h7.879a1.5,1.5,0,0,1,.969.355l4.764,4.029A1.5,1.5,0,0,1,20,7.529V20.083C20,21.874,19.98,22,18.143,22H5.857C4.02,22,4,21.874,4,20.083V3.917C4,2.126,4.02,2,5.857,2Z" fill="#922f82" opacity="0.3"/><rect width="9" height="2" rx="1" transform="translate(6 11)" fill="#ae29a1"/><rect width="5" height="2" rx="1" transform="translate(6 15)" fill="#ae29a1"/></svg>
