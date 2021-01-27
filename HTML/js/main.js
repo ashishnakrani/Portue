@@ -55,15 +55,30 @@ $projects.imagesLoaded(function() {
       layoutMode: 'masonry',
       percentPosition: true,
       getSortData: {
-        name: '.name',
-        symbol: '.symbol',
-        number: '.number parseInt',
         category: '[data-category]',
-        weight: function( itemElem ) {
-          var weight = $( itemElem ).find('.weight').text();
-          return parseFloat( weight.replace( /[\(\)]/g, '') );
-        }
       }
     });
   }, 1500);
+});
+
+let filterFns = {
+  // show if number is greater than 50
+  numberGreaterThan50: function() {
+    let number = $(this).find('.number').text();
+    return parseInt( number, 10 ) > 50;
+  },
+  // show if name ends with -ium
+  ium: function() {
+    let name = $(this).find('.name').text();
+    return name.match( /ium$/ );
+  }
+};
+$('button').on('click', function() {
+    let filterValue = $( this ).attr('data-filter');
+    // use filterFn if matches value
+    filterValue = filterFns[ filterValue ] || filterValue;
+    $projects.isotope({ filter: filterValue });
+
+    $(this).siblings().removeClass('active');
+    $(this).addClass('active');
 });

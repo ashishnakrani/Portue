@@ -357,54 +357,67 @@
 
         <div class="tab-pane fade" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab">
           <div class="projects-container p-10">
-          <div class="page-heading">
-            <h2 class="heading">Projects</h2>
-          </div>
-          <div class="projects">
-            <button class="button" data-sort-value="name">name</button>
-  <button class="button" data-sort-value="symbol">symbol</button>
-  <button class="button" data-sort-value="number">number</button>
-  <button class="button" data-sort-value="weight">weight</button>
-  <button class="button" data-sort-value="category">category</button>
-  <div class="projects__grid">
-    <div class="grid-sizer"></div>
-            <div class="projects__item">
-              <img src="https://images.unsplash.com/photo-1529854140025-25995121f16f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y3JlYXRpdmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+            <div class="page-heading">
+              <h2 class="heading">Projects</h2>
             </div>
-            
-            <div class="projects__item">
-              <img src="https://images.unsplash.com/photo-1591871987673-f1513e38493b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y3JlYXRpdmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            
-            <div class="projects__item">
-              <img src="https://images.unsplash.com/photo-1603993097397-89c963e325c7?ixid=MXwxMjA3fDF8MHxzZWFyY2h8Nnx8Y3JlYXRpdmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            
-            <div class="projects__item">
-              <img src="https://images.unsplash.com/photo-1524940341013-28b7a45da417?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTd8fGNyZWF0aXZlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            
-            <div class="projects__item">
-              <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGNyZWF0aXZlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            
-            <div class="projects__item">
-              <img src="https://images.unsplash.com/photo-1593642532400-2682810df593?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fGNyZWF0aXZlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
+            <div class="projects">
+              <div class="projects__nav">
+                <button class="btn active" data-filter="*">All</button>
+                <button class="btn" data-filter=".graphic">Graphic Design</button>
+                <button class="btn" data-filter=".web">Web Design</button>
+                <button class="btn" data-filter=".mobile">Mobile Apps</button>
+              </div>
+              <div class="projects__grid">
+                <div class="grid-sizer"></div>
+                <div class="projects__item graphic" data-category="graphic">
+                  <img
+                    src="https://images.unsplash.com/photo-1529854140025-25995121f16f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y3JlYXRpdmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                </div>
 
-          </div>
+                <div class="projects__item web" data-category="web">
+                  <img
+                    src="https://images.unsplash.com/photo-1591871987673-f1513e38493b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y3JlYXRpdmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                </div>
+
+                <div class="projects__item mobile" data-category="mobile">
+                  <img
+                    src="https://images.unsplash.com/photo-1603993097397-89c963e325c7?ixid=MXwxMjA3fDF8MHxzZWFyY2h8Nnx8Y3JlYXRpdmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                </div>
+
+                <div class="projects__item graphic" data-category="graphic">
+                  <img
+                    src="https://images.unsplash.com/photo-1524940341013-28b7a45da417?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTd8fGNyZWF0aXZlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                </div>
+
+                <div class="projects__item web" data-category="web">
+                  <img
+                    src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGNyZWF0aXZlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                </div>
+
+                <div class="projects__item mobile" data-category="mobile">
+                  <img
+                    src="https://images.unsplash.com/photo-1593642532400-2682810df593?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fGNyZWF0aXZlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Vendor Scripts -->
-    <script src="plugins/jquery/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="plugins/masonary/isotope.pkgd.min.js"></script>
-    <script src="plugins/imageLoaded/imagesloaded.pkgd.min.js"></script>
-    <script src="plugins/circle-progress/circle-progress.js"></script>
-    <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+      <!-- Vendor Scripts -->
+      <script src="plugins/jquery/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="plugins/masonary/isotope.pkgd.min.js"></script>
+      <script src="plugins/imageLoaded/imagesloaded.pkgd.min.js"></script>
+      <script src="plugins/circle-progress/circle-progress.js"></script>
+      <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+      <script src="js/main.js"></script>
 </body>
 
 </html>

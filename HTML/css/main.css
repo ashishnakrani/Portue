@@ -558,12 +558,49 @@ nav .nav .navbar-indicator {
   border: 1px dashed var(--primary-dark);
 }
 
+.projects-container {
+  min-height: 80vh;
+}
+
+.projects-container .projects__nav {
+  margin-bottom: 1rem;
+}
+
+.projects-container .projects__nav button {
+  outline: none;
+  opacity: .8;
+  padding: .8rem;
+  font-weight: 500;
+}
+
+.projects-container .projects__nav button:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.projects-container .projects__nav button.active {
+  color: var(--primary-dark);
+}
+
 .projects-container .projects__grid .projects__item, .projects-container .projects__grid .grid-sizer {
   float: left;
-  width: calc(33.33% - 10px);
+  width: calc(25% - 10px);
   margin-right: 10px;
   margin-bottom: 10px;
   background: #0D8;
+}
+
+@media screen and (max-width: 1200px) {
+  .projects-container .projects__grid .projects__item, .projects-container .projects__grid .grid-sizer {
+    width: calc(33.33% - 10px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .projects-container .projects__grid .projects__item, .projects-container .projects__grid .grid-sizer {
+    width: calc(50% - 10px);
+  }
 }
 
 .projects-container .projects__grid .projects__item img, .projects-container .projects__grid .grid-sizer img {

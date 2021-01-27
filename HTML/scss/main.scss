@@ -498,14 +498,43 @@ nav {
 }
 
 .projects-container {
+  min-height: 80vh;
+
   .projects {
+    &__nav {
+      margin-bottom: 1rem;
+
+      button {
+        outline: none;
+        opacity: .8;
+        padding: .8rem;
+        font-weight: 500;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+
+        &.active {
+          color: var(--primary-dark);
+        }
+      }
+    }
     &__grid {
       .projects__item, .grid-sizer {
           float: left;
-          width: calc(33.33% - 10px);
+          width: calc(25% - 10px);
           margin-right: 10px;
           margin-bottom: 10px;
           background: #0D8;
+
+          @media screen and (max-width: 1200px) {
+            width: calc(33.33% - 10px);
+          }
+
+          @media screen and (max-width: 576px) {
+            width: calc(50% - 10px);
+          }
 
           img {
             max-width: 100%;
