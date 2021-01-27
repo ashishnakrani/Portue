@@ -46,10 +46,10 @@ $(document).on('click', '#nav-about-me-tab', function() {
   }
 });
 
+// Project Masonry
 let $projects = $('.projects__grid');
 $projects.imagesLoaded(function() {
-  setTimeout(function() {
-
+  setTimeout(function () {
     $projects.isotope({
       itemSelector: '.projects__item',
       layoutMode: 'masonry',
@@ -58,9 +58,10 @@ $projects.imagesLoaded(function() {
         category: '[data-category]',
       }
     });
-  }, 1500);
+  }, 2000);
 });
-
+    
+// Masonry Filter
 let filterFns = {
   // show if number is greater than 50
   numberGreaterThan50: function() {
@@ -78,7 +79,6 @@ $('button').on('click', function() {
     // use filterFn if matches value
     filterValue = filterFns[ filterValue ] || filterValue;
     $projects.isotope({ filter: filterValue });
-
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
 });
