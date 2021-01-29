@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <!-- Font Icons -->
   <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <!-- Theme Styles -->
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -21,22 +22,49 @@
     <div class="bubble-1 bubble"></div>
     <div class="bubble-2 bubble"></div>
     <div class="container mt-10">
+
+      <!-- Nav Start -->
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
           <span class="navbar-indicator"></span>
           <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-            aria-controls="nav-home" aria-selected="true">Home</a>
+            aria-controls="nav-home" aria-selected="true">
+            <span>Home</span>
+            <i class="fas fa-home"></i>
+          </a>
           <a class="nav-item nav-link" id="nav-about-me-tab" data-toggle="tab" href="#nav-about-me" role="tab"
-            aria-controls="nav-about-me" aria-selected="false">About Me</a>
+            aria-controls="nav-about-me" aria-selected="false">
+            <span>About Me</span>
+            <i class="fas fa-address-card"></i>
+          </a>
           <a class="nav-item nav-link" id="nav-resume-tab" data-toggle="tab" href="#nav-resume" role="tab"
-            aria-controls="nav-resume" aria-selected="false">Resume</a>
+            aria-controls="nav-resume" aria-selected="false">
+            <span>Resume</span>
+            <i class="fas fa-file"></i>
+          </a>
           <a class="nav-item nav-link" id="nav-projects-tab" data-toggle="tab" href="#nav-projects" role="tab"
-            aria-controls="nav-projects" aria-selected="false">Projects</a>
+            aria-controls="nav-projects" aria-selected="false">
+            <span>Projects</span>
+            <i class="fas fa-layer-group"></i>
+          </a>
           <a class="nav-item nav-link" id="nav-blogs-tab" data-toggle="tab" href="#nav-blogs" role="tab"
-            aria-controls="nav-blogs" aria-selected="false">Blogs</a>
+            aria-controls="nav-blogs" aria-selected="false">
+            <span>Blogs</span>
+            <i class="fas fa-file-image"></i>
+          </a>
+          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+            aria-controls="nav-contact" aria-selected="false">
+            <span>Contact</span>
+            <i class="fas fa-id-badge"></i>
+          </a>
         </div>
       </nav>
+      <!-- Nav Ends -->
+
+      <!-- Content Start -->
       <div class="tab-content" id="nav-tabContent">
+
+        <!-- Home Sections Start -->
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
           <div class="home-container">
             <div class="row">
@@ -64,8 +92,11 @@
             </div>
           </div>
         </div>
+        <!-- Home Sections End -->
+
+        <!-- About Me Sections Start -->
         <div class="tab-pane fade" id="nav-about-me" role="tabpanel" aria-labelledby="nav-profile-tab">
-          <div class="about-me-container p-10">
+          <div class="about-me-container p-sm-10 p-8">
             <div class="page-heading">
               <h2 class="heading">
                 About Me
@@ -231,7 +262,7 @@
               </h2>
               <div class="services">
                 <div class="row">
-                  <div class="col-xxl-4 col-md-6 col-md-12">
+                  <div class="col-xxl-4 col-md-6 col-md-12 mb-5">
                     <div class="services__item">
                       <div class="item-icon">
                         <img src="images/svg/Bezier-curve.svg" alt="graphic designer">
@@ -245,7 +276,7 @@
                     </div>
                   </div>
 
-                  <div class="col-xxl-4 col-md-6 col-md-12">
+                  <div class="col-xxl-4 col-md-6 col-md-12 mb-5">
                     <div class="services__item">
                       <div class="item-icon">
                         <img src="images/svg/Camera.svg" alt="Photography">
@@ -259,7 +290,7 @@
                     </div>
                   </div>
 
-                  <div class="col-xxl-4 col-md-6 col-md-12">
+                  <div class="col-xxl-4 col-md-6 col-md-12 mb-5">
                     <div class="services__item">
                       <div class="item-icon">
                         <img src="images/svg/Display3.svg" alt="">
@@ -278,6 +309,9 @@
             </div>
           </div>
         </div>
+        <!-- About Me Sections End -->
+
+        <!-- Resume Section Start -->
         <div class="tab-pane fade" id="nav-resume" role="tabpanel" aria-labelledby="nav-resume-tab">
           <div class="resume-container p-10">
             <div class="page-heading">
@@ -356,7 +390,9 @@
             </div>
           </div>
         </div>
+        <!-- Resume Section End -->
 
+        <!-- Project Section Start -->
         <div class="tab-pane fade" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab">
           <div class="projects-container p-10">
             <div class="page-heading">
@@ -471,7 +507,9 @@
             </div>
           </div>
         </div>
+        <!-- Project Section End -->
 
+        <!-- Blogs Sections Start -->
         <div class="tab-pane fade" id="nav-blogs" role="tabpanel" aria-labelledby="nav-blogs-tab">
           <div class="blogs-container p-10">
             <div class="page-heading">
@@ -546,7 +584,87 @@
             </div>
           </div>
         </div>
+        <!-- Blogs Sections End -->
+
+        <!-- Contact Sections Start -->
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+          <div class="blogs-container p-10">
+            <div class="page-heading">
+              <h2 class="heading">Latest Blogs</h2>
+            </div>
+            <div class="blogs">
+              <div class="blogs__grid col-12">
+                <div class="row">
+                  <!-- <div class="row"> -->
+                  <div class="col-xxl-4 col-lg-6 col-sm-12">
+                    <div class="blogs__item graphic ">
+                      <img src="images/projects/project1.jpg" alt="web design">
+                      <div class="blogs__item__description">
+                        <div class="description-content">
+                          <a href="javascript:void(0)" class="blog-title">3D Web Design</a>
+                          <span class="mr-5"><i class="fas fa-eye mr-3"></i>25</span>
+                          <span><i class="fas fa-thumbs-up mr-3"></i>25</span>
+                        </div>
+                        <a href="javascript:void(0)" class="btn btn-outline-primary">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl-4 col-lg-6 col-sm-12">
+                    <div class="blogs__item graphic">
+                      <img src="images/projects/project12.jpg" alt="web design">
+                      <div class="blogs__item__description">
+                        <div class="description-content">
+                          <a href="javascript:void(0)" class="blog-title">3D Web Design</a>
+                          <span class="mr-5"><i class="fas fa-eye mr-3"></i>25</span>
+                          <span><i class="fas fa-thumbs-up mr-3"></i>25</span>
+                        </div>                        
+                        <a href="javascript:void(0)" class="btn btn-outline-primary">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl-4 col-lg-6 col-sm-12">
+                    <div class="blogs__item graphic">
+                      <img src="images/projects/project1.jpg" alt="web design">
+                      <div class="blogs__item__description">
+                        <div class="description-content">
+                          <a href="javascript:void(0)" class="blog-title">3D Web Design</a>
+                          <span class="mr-5"><i class="fas fa-eye mr-3"></i>25</span>
+                          <span><i class="fas fa-thumbs-up mr-3"></i>25</span>
+                        </div>
+                        <a href="javascript:void(0)" class="btn btn-outline-primary">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl-4 col-lg-6 col-sm-12">
+                    <div class="blogs__item graphic">
+                      <img src="images/projects/project10.jpg" alt="web design">
+                      <div class="blogs__item__description">
+                        <div class="description-content">
+                          <a href="javascript:void(0)" class="blog-title">3D Web Design</a>
+                          <span class="mr-5"><i class="fas fa-eye mr-3"></i>25</span>
+                          <span><i class="fas fa-thumbs-up mr-3"></i>25</span>
+                        </div>
+                        <a href="javascript:void(0)" class="btn btn-outline-primary">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Sections End -->
       </div>
+      <!-- Content End -->
+
       <!-- Vendor Scripts -->
       <script src="plugins/jquery/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>

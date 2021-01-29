@@ -44,6 +44,12 @@ body {
           transform: rotate(180deg);
 }
 
+@media screen and (max-width: 576px) {
+  .bubble-2 {
+    max-width: 100%;
+  }
+}
+
 .page-heading {
   padding-bottom: 1rem;
   display: block;
@@ -82,7 +88,6 @@ body {
 
 nav {
   padding: 10px;
-  width: 50%;
   float: right;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 3rem;
@@ -120,6 +125,28 @@ nav .nav-link:hover {
   background: none !important;
 }
 
+nav .nav-link i {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  nav .nav-link {
+    width: 4rem;
+  }
+  nav .nav-link span {
+    display: none;
+  }
+  nav .nav-link i {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav .nav-link {
+    width: 3.5rem;
+  }
+}
+
 nav .nav .navbar-indicator {
   position: absolute;
   -webkit-transition: .3s ease-out;
@@ -132,6 +159,18 @@ nav .nav .navbar-indicator {
   border-radius: 1.7rem;
   -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
           box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 1024px) {
+  nav .nav .navbar-indicator {
+    width: 4rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav .nav .navbar-indicator {
+    width: 3.5rem;
+  }
 }
 
 .tab-content {
@@ -451,6 +490,24 @@ nav .nav .navbar-indicator {
   right: 1rem;
 }
 
+@media screen and (max-width: 576px) {
+  .about-me-container .testimonials-container .testimonials__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-me-container .testimonials-container .testimonials__item-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: .5rem;
+  }
+}
+
 .about-me-container .testimonials-container .testimonials .owl-nav {
   display: inline-block;
   position: absolute;
@@ -476,6 +533,18 @@ nav .nav .navbar-indicator {
 .about-me-container .testimonials-container .testimonials .owl-nav button:hover {
   border-color: transparent;
   background: var(--primary-dark);
+}
+
+@media screen and (max-width: 576px) {
+  .about-me-container .testimonials-container .testimonials .owl-nav {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+  .about-me-container .testimonials-container .testimonials .owl-nav button {
+    height: 2rem;
+    width: 2rem;
+    font-size: 1rem;
+  }
 }
 
 .about-me-container .services-container .services__item {
