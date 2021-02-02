@@ -163,7 +163,7 @@ nav {
   }
 }
 
-// Content Base Css
+// Content Base CSS
 .tab-content {
   clear: both;
   margin: 30px 0;
@@ -182,7 +182,7 @@ nav {
   }
 }
 
-// Home Section Css
+// Home Section CSS
 .home-container {
   height: 100%;
   display: flex;
@@ -282,7 +282,7 @@ nav {
   }
 }
 
-// About Section Css
+// About Section CSS
 .about-me-container {
   .intro {
     box-shadow: 0 10px 30px rgba($color: $black, $alpha: .05);
@@ -514,7 +514,7 @@ nav {
   }
 }
 
-// Resume Section Css
+// Resume Section CSS
 .resume-container {
   .educations, .employments {
     margin-top: 1rem;
@@ -549,7 +549,7 @@ nav {
   }
 }
 
-// Projects Section Css
+// Projects Section CSS
 .projects-container {
   min-height: 80vh;
 
@@ -645,11 +645,15 @@ nav {
             }
           }
       }
+
+      .grid-sizer {
+        margin-bottom: 0 !important; 
+      }
     }
   }
 }
 
-// Blogs Section Css
+// Blogs Section CSS
 .blogs-container {
   .blogs {
 
@@ -709,6 +713,10 @@ nav {
 
 // Media queries
 @media screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+
   nav {
     width: 100%;
   }

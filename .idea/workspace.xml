@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d6065f5-8032-4273-876d-04f6575b1082" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/home-01.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/home-01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +27,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3d6065f5-8032-4273-876d-04f6575b1082" name="Default Changelist" comment="" />
@@ -35,7 +39,22 @@
       <option name="presentableId" value="Default" />
       <updated>1610899062490</updated>
       <workItem from="1610899063802" duration="11000" />
+      <workItem from="1612063581325" duration="3000" />
+      <workItem from="1612066356402" duration="324000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="557" y="213" key="FileChooserDialogImpl" timestamp="1612066478370">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="557" y="213" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612066478370" />
+    <state x="262" y="127" key="SettingsEditor" timestamp="1612066664109">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="262" y="127" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612066664109" />
   </component>
 </project>

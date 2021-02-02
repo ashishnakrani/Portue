@@ -66,18 +66,29 @@ $(document).on('click', '#nav-about-me-tab', function () {
 
 // Project Masonry
 let $projects = $('.projects__grid');
-$projects.imagesLoaded(function () {
-  setTimeout(function () {
-    $projects.isotope({
-      itemSelector: '.projects__item',
-      layoutMode: 'masonry',
-      percentPosition: true,
-      getSortData: {
-        category: '[data-category]',
-      }
-    });
-  }, 3000);
+$projects.imagesLoaded(() => {
+    setTimeout(() => {
+      $projects.isotope({
+        itemSelector: '.projects__item',
+        layoutMode: 'masonry',
+        percentPosition: true,
+        getSortData: {
+          category: '[data-category]',
+        }
+      });
+    }, 2000);
 });
+
+// Force reInit isotope
+$(document).on('click', '#nav-projects-tab', () => {
+  reInitializeProjectGrid();
+});
+
+const reInitializeProjectGrid = () => {
+  setTimeout(() => {
+    $projects.isotope();
+  }, 500);
+}
 
 // Masonry Filter
 let filterFns = {

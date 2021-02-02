@@ -736,6 +736,10 @@ nav .nav .navbar-indicator {
           transform: translateY(0);
 }
 
+.projects-container .projects__grid .grid-sizer {
+  margin-bottom: 0 !important;
+}
+
 .blogs-container .blogs__item {
   height: 400px;
   margin-bottom: 1.5rem;
@@ -807,6 +811,9 @@ nav .nav .navbar-indicator {
 }
 
 @media screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
   nav {
     width: 100%;
   }
