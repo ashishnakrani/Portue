@@ -701,6 +701,12 @@ nav .nav .navbar-indicator {
   z-index: 2;
 }
 
+@media screen and (max-width: 768px) {
+  .projects-container .projects__grid .projects__item__description, .projects-container .projects__grid .grid-sizer__description {
+    font-size: .6rem;
+  }
+}
+
 .projects-container .projects__grid .projects__item:before, .projects-container .projects__grid .grid-sizer:before {
   content: "";
   height: 100%;
@@ -808,6 +814,14 @@ nav .nav .navbar-indicator {
 .blogs-container .blogs__item__description a.blog-title {
   font-size: 1.5rem;
   display: block;
+}
+
+.contact-us-form .form-control {
+  border-radius: 1.4rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 992px) {

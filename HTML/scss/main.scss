@@ -610,6 +610,10 @@ nav {
             transition: .3s ease-out;
             color: var(--primary-light);
             z-index: 2;
+
+            @media screen and (max-width: 768px) {
+              font-size: .6rem
+            }
           }
 
           &:before {
@@ -708,6 +712,16 @@ nav {
         }
       }
     }
+  }
+}
+
+// Contact Us Section CSS
+.contact-us-form {
+  .form-control {
+    border-radius: 1.4rem;
+    border: none;
+    background: rgba($color: $white, $alpha: .8);
+    box-shadow: 0 .5rem 2rem rgba($color: $black, $alpha: .1);
   }
 }
 
